@@ -34,39 +34,55 @@
   display: inline-flex;
   align-items: center;
   padding: 14px 32px;
-  background-color: white;
-  color: var(--color-secondary);
+  background: linear-gradient(180deg, #ffffff 0%, #e8e8e8 100%);
+  color: var(--color-primary);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-base);
   border-radius: var(--radius-md);
   text-decoration: none;
   transition: all var(--transition-base);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 4px 16px rgba(0, 0, 0, 0.30),
+    0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  color: var(--color-focus);
+  transform: translateY(-3px);
+  background: linear-gradient(180deg, #ffffff 0%, #efefef 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 10px 28px rgba(0, 0, 0, 0.35),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+  color: var(--color-primary);
 }
 
 .secondaryButton {
   display: inline-flex;
   align-items: center;
   padding: 14px 32px;
-  background-color: transparent;
+  background: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.06) 100%);
   color: white;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-base);
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 1.5px solid rgba(255, 255, 255, 0.50);
   border-radius: var(--radius-md);
   text-decoration: none;
   transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 16px rgba(0, 0, 0, 0.20);
 }
 
 .secondaryButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: white;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.12) 100%);
+  border-color: rgba(255, 255, 255, 0.80);
   color: white;
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 640px) {

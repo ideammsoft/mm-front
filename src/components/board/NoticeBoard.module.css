@@ -33,16 +33,17 @@
 }
 
 .moreLink:hover {
-  background-color: rgba(59, 130, 246, 0.05);
+  background-color: rgba(79, 70, 229, 0.06);
   transform: translateX(4px);
   color: var(--color-focus);
 }
 
 .board {
   background-color: var(--color-background-light);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   overflow: hidden;
   padding: var(--spacing-sm);
+  border: 1px solid var(--color-border);
 }
 
 .empty {
